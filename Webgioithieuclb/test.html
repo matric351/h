@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gia Nhập Câu Lạc Bộ [Tên CLB]</title>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+
+    <style>
+        /* CSS NẰM LUÔN Ở ĐÂY */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Be Vietnam Pro', sans-serif;
+        }
+
+        body {
+            background-color: #0f172a; /* Màu nền tối hiện đại */
+            color: #f8fafc;
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 100vh;
+            background: linear-gradient(rgba(15, 23, 42, 0.7), rgba(15, 23, 42, 0.8)), 
+                        url('https://images.unsplash.com');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #38bdf8; /* Xanh dương sáng */
+        }
+
+        .hero-content p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            background: #38bdf8;
+            color: #0f172a;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            transform: scale(1.1);
+            background: #f0f9ff;
+        }
+
+        /* Phần giới thiệu */
+        .section {
+            padding: 80px 20px;
+            max-width: 1100px;
+            margin: auto;
+            text-align: center;
+        }
+
+        .section h2 {
+            font-size: 2.5rem;
+            margin-bottom: 40px;
+            color: #38bdf8;
+        }
+
+        /* Grid hoạt động */
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 15px;
+            border: 1px solid #334155;
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            border-color: #38bdf8;
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-bottom: 15px;
+            color: #f1f5f9;
+        }
+
+        /* Footer */
+        footer {
+            padding: 40px;
+            text-align: center;
+            background: #020617;
+            border-top: 1px solid #1e293b;
+        }
+
+        .social-links a {
+            color: #94a3b8;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .social-links a:hover {
+            color: #38bdf8;
+        }
+
+        /* Mobile tối ưu */
+        @media (max-width: 768px) {
+            .hero-content h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Trang chủ -->
+    <header class="hero">
+        <div class="hero-content">
+            <h1>[TÊN CÂU LẠC BỘ]</h1>
+            <p>Khám phá tiềm năng - Kết nối đam mê - Cùng nhau bứt phá giới hạn của chính mình.</p>
+            <a href="#about" class="btn">Tìm hiểu ngay</a>
+        </div>
+    </header>
+
+    <!-- Về chúng tôi -->
+    <section class="section" id="about">
+        <h2>Về Chúng Tôi</h2>
+        <p style="font-size: 1.1rem; color: #94a3b8;">
+            Chào mừng bạn đến với [Tên CLB]. Đây không chỉ là một câu lạc bộ, mà là một gia đình nơi các bạn có thể tự do sáng tạo, học hỏi các kỹ năng thực tế như [Kỹ năng 1], [Kỹ năng 2] và tham gia vào những dự án thực tế đầy thử thách.
+        </p>
+    </section>
+
+    <!-- Hoạt động -->
+    <section class="section">
+        <h2>Hoạt Động Có Gì Vui?</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>🚀 Dự án Thực chiến</h3>
+                <p>Không chỉ nói suông, chúng tôi bắt tay vào làm thật để lấy kinh nghiệm.</p>
+            </div>
+            <div class="card">
+                <h3>☕ Giao lưu Kết nối</h3>
+                <p>Những buổi cafe, trà sữa và "chém gió" xuyên lục địa cùng anh em.</p>
+            </div>
+            <div class="card">
+                <h3>🎓 Workshop Chuyên sâu</h3>
+                <p>Được hướng dẫn tận tình từ các tiền bối có kinh nghiệm trong ngành.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Bạn đã sẵn sàng để trở thành một phần của chúng tôi?</p><br>
+        <a href="https://docs.google.com..." target="_blank" class="btn">GỬI ĐƠN ĐĂNG KÝ</a>
+        <div class="social-links" style="margin-top: 30px;">
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">TikTok</a>
+        </div>
+        <p style="margin-top: 20px; font-size: 0.8rem; color: #475569;">© 2024 [Tên Câu Lạc Bộ]. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
